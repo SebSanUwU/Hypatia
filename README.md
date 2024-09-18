@@ -12,7 +12,7 @@ Nuestro objetivo es resolver la necesidad de un espacio centralizado, seguro y a
 
 Hemos generado una serie de **prototipos visuales** utilizando inteligencia artificial para mostrar el diseño y la funcionalidad de la aplicación **Hypatia**. Estos prototipos fueron creados con la herramienta **galileo.ai** y pueden visualizarse en **Figma** a través del siguiente enlace:
 
-[**Prototipos en Figma**](https://www.figma.com/design/vDNzvVuvJs75V2fQgv7XhA/Hypatia?node-id=1-34&node-type=frame&t=UeAZtrVsRSNafben-0)
+[**Prototipos en Figma**](https://www.figma.com/design/vDNzvVuvJs75V2fQgv7XhA/Hypatia?node-id=1-34&t=UeAZtrVsRSNafben-1)
 
 ---
 
@@ -26,29 +26,37 @@ El logotipo de **Hypatia** representa la sabiduría y el conocimiento, evocando 
 ### Móviles
 
 #### Home Screen
-- Pantalla principal con el logotipo de **Hypatia** y opciones de navegación intuitiva.
-  
+- Pantalla principal con el logotipo de **Hypatia** y opciones de navegación intuitiva.  
+  <img src="content/homescreenMovil.png" alt="homescreenMovil" width="300"/>
+
 #### Note Creation Screen
-- Interfaz simple para crear y editar notas, con opciones para agregar etiquetas y categorías.
+- Interfaz simple para crear y editar notas, con opciones para agregar etiquetas y categorías.  
+  <img src="content/notecreationMovil.png" alt="notecreationMovil" width="300"/>
 
 #### Note Organization Panel
-- Vista en cuadrícula o lista de las notas, categorizadas por asignaturas, con un buscador integrado.
+- Vista en cuadrícula o lista de las notas, categorizadas por asignaturas, con un buscador integrado.  
+  <img src="content/noteorgpanelMovil.png" alt="noteorgpanelMovil" width="300"/>
 
 ---
 
 ### Web
 
 #### Login
-- Pantalla de inicio de sesión simple, con autenticación segura para acceder a las funciones de la plataforma.
+- Pantalla de inicio de sesión simple, con autenticación segura para acceder a las funciones de la plataforma.  
+  <img src="content/loginWeb.png" alt="loginWeb" width="400"/>
 
 #### Home Screen
-- Vista principal con menú lateral para acceder a notas, tareas y proyectos.
+- Vista principal con menú lateral para acceder a notas, tareas y proyectos.  
+  <img src="content/homescreenWeb.png" alt="homescreenWeb" width="400"/>
 
 #### Note Creation Screen
-- Editor completo para la creación de notas, con soporte para imágenes, enlaces y formato avanzado.
+- Editor completo para la creación de notas, con soporte para imágenes, enlaces y formato avanzado.  
+  <img src="content/notecreationWeb.png" alt="notecreationWeb" width="400"/>
 
 #### Note Organization Panel
-- Panel de organización con vista de notas, ordenadas por asignaturas, con opciones rápidas para editar y eliminar notas.
+- Panel de organización con vista de notas, ordenadas por asignaturas, con opciones rápidas para editar y eliminar notas.  
+  <img src="content/noteorgpanelWeb.png" alt="noteorgpanelWeb" width="400"/>
+
 
 ---
 
