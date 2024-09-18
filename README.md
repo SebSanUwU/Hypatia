@@ -19,7 +19,9 @@ Hemos generado una serie de **prototipos visuales** utilizando inteligencia arti
 ## Prototipos Visuales
 
 ### Logo
-El logotipo de **Hypatia** representa la sabiduría y el conocimiento, evocando la herencia de Hypatia, la filósofa y matemática griega. Combina elementos simbólicos educativos y colores que transmiten calma y organización.
+El logotipo de **Hypatia** simboliza sabiduría y conocimiento, inspirado en la figura de Hypatia, la filósofa y matemática de la Antigua Grecia. El diseño combina elementos educativos y geométricos que evocan organización, claridad y aprendizaje.
+
+<img src="content/logo.png" alt="Hypatia Logo" width="200"/>
 
 ---
 
