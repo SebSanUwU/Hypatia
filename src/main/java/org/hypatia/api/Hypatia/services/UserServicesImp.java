@@ -50,6 +50,6 @@ public class UserServicesImp implements UserServices {
         user.setName(userDto.getName());
         user.setLastName(userDto.getLastName());
         user.setPassword(userDto.getPassword());
-        user.setEmail(userDto.getEmail());
+        userRepository.save(user);
     }
 }

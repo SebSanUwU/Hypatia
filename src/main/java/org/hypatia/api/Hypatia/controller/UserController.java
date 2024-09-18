@@ -9,7 +9,6 @@ import org.hypatia.api.Hypatia.services.UserServices;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
 import java.net.URI;
 import java.util.List;
 
@@ -27,6 +26,16 @@ public class UserController {
     public ResponseEntity<List<User>> findUsers(){
         List<User> users = userServices.findUsers();
         return ResponseEntity.ok(users);
+    }
+
+    @GetMapping("{email}")
+    public ResponseEntity<User> findUser(@PathVariable String email) throws UserAlreadyExistException {
+        try {
+            User user = userServices.findUserByEmail(email);
+            return ResponseEntity.ok(user);
+        } catch ( UserNameNotFoundException e) {
+            return ResponseEntity.notFound().build();
+        }
     }
 
     @PostMapping
@@ -49,13 +58,15 @@ public class UserController {
     }
 
     @PutMapping("{email}")
-    public ResponseEntity<User> updateUser(@PathVariable String email, @RequestBody UserDto userDto) throws UserAlreadyExistException, UserNameNotFoundException {
+    public ResponseEntity<User> updateUser(@PathVariable String email, @RequestBody UserDto userDto)  {
         try {
             User user = userServices.findUserByEmail(email);
             userServices.updateUser(user, userDto);
             return ResponseEntity.ok(user);
         } catch (UserNameNotFoundException e) {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
+        } catch (UserAlreadyExistException ex){
+            return ResponseEntity.status(409).build();
         }
 
     }

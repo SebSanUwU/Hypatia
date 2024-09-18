@@ -10,14 +10,16 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection = "users")
 @Getter
-@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 public class User {
     @Id
     private String email;
+    @Setter
     private String name;
+    @Setter
     private String lastName;
+    @Setter
     private String password;
 
     public User(UserDto userDto) {
