@@ -1,5 +1,14 @@
 # Hypatia
 
+### Integrantes del Proyecto
+
+El desarrollo de **Hypatia** ha sido posible gracias al esfuerzo colaborativo de los siguientes miembros del equipo:
+
+- **[Christian Duarte]**
+- **[Sebastian Camargo]**
+- **[Johan Sebastian Garcia]**
+
+
 **Hypatia** es una plataforma de gestión de proyectos y notas para estudiantes, potenciada por inteligencia artificial (IA). Nuestra solución facilita la organización académica automatizando el proceso de digitalización de horarios, creando cuadernos de notas para cada asignatura, y centralizando todo el contenido en un formato digital.
 
 Gracias a la IA, **Hypatia** permite escanear cuadernos físicos y convertirlos en cuadernos virtuales, generar resúmenes automáticos y ofrecer evaluaciones inteligentes basadas en los apuntes. Además, la plataforma incorpora herramientas avanzadas de gestión de tareas, agendas y pendientes, todo almacenado de manera segura en la nube.
