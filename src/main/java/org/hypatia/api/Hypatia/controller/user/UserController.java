@@ -1,4 +1,4 @@
-package org.hypatia.api.Hypatia.controller;
+package org.hypatia.api.Hypatia.controller.user;
 
 import org.hypatia.api.Hypatia.dto.UserDto;
 import org.hypatia.api.Hypatia.exceptions.UserAlreadyExistException;
@@ -8,6 +8,7 @@ import org.hypatia.api.Hypatia.model.User;
 import org.hypatia.api.Hypatia.services.UserServices;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 import java.net.URI;
 import java.util.List;
@@ -18,8 +19,11 @@ public class UserController {
 
     private final UserServices userServices;
 
-    public UserController(UserServices userServices) {
+    private final PasswordEncoder passwordEncoder;
+
+    public UserController(UserServices userServices, PasswordEncoder passwordEncoder) {
         this.userServices = userServices;
+        this.passwordEncoder = passwordEncoder;
     }
 
     @GetMapping
@@ -44,6 +48,7 @@ public class UserController {
             userServices.findUserByEmail(userDto.getEmail());
             throw new UserAlreadyExistException();
         }catch (UserNameNotFoundException e){
+            userDto.setPassword(passwordEncoder.encode(userDto.getPassword()));
             User user = new User(userDto);
             try {
                 userServices.createUser(user);
@@ -61,6 +66,7 @@ public class UserController {
     public ResponseEntity<User> updateUser(@PathVariable String email, @RequestBody UserDto userDto)  {
         try {
             User user = userServices.findUserByEmail(email);
+            userDto.setPassword(passwordEncoder.encode(userDto.getPassword()));
             userServices.updateUser(user, userDto);
             return ResponseEntity.ok(user);
         } catch (UserNameNotFoundException e) {
