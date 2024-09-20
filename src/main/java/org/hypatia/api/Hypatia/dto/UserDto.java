@@ -8,6 +8,7 @@ import org.hypatia.api.Hypatia.utils.RoleEnum;
 
 import java.util.List;
 
+
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
@@ -18,5 +19,4 @@ public class UserDto {
     @Setter
     private String password;
     private List<RoleEnum> roles;
-
 }

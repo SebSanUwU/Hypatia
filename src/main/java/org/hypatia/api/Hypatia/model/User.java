@@ -10,9 +10,9 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
+
 
 @Document(collection = "users")
 @Getter
@@ -30,7 +30,6 @@ public class User {
     @Setter
     private List<RoleEnum> roles;
 
-
     public User(UserDto userDto) {
         this.email = userDto.getEmail();
         this.name = userDto.getName();
@@ -40,3 +39,4 @@ public class User {
     }
 
 }
+
