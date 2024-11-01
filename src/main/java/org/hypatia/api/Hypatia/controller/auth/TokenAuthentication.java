@@ -8,8 +8,7 @@ import java.util.Collection;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class TokenAuthentication
-        extends AbstractAuthenticationToken {
+public class TokenAuthentication extends AbstractAuthenticationToken {
     String token;
 
     String subject;

@@ -47,6 +47,7 @@ public class UserServicesImp implements UserServices {
 
     @Override
     public void updateUser(User user, UserDto userDto) {
+        // No es necesario Eliminar el usuario (LA LLAVE NUNCA SE ACTUALIZA )
         user.setName(userDto.getName());
         user.setLastName(userDto.getLastName());
         user.setPassword(userDto.getPassword());
